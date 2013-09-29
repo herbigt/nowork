@@ -25,6 +25,9 @@
                             <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="365" translatesAutoresizingMaskIntoConstraints="NO" id="DIj-KQ-CYu">
                                 <rect key="frame" x="113" y="352" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <action selector="stepperPressed:" destination="vXZ-lx-hvc" eventType="valueChanged" id="COy-bZ-dFK"/>
+                                </connections>
                             </stepper>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="days you haven't worked since" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJU-Zn-WrC">
                                 <rect key="frame" x="41" y="399" width="238" height="21"/>
@@ -50,6 +53,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="stepperPressed" destination="DIj-KQ-CYu" id="1jD-2a-kAp"/>
+                        <outlet property="stepperValueLabel" destination="YnD-eM-Dwe" id="KAf-sL-Rp4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

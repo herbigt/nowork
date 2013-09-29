@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UILabel *stepperValueLabel;
+@property (strong, nonatomic) IBOutlet UIStepper *stepperPressed;
+- (IBAction)stepperPressed:(UIStepper *)sender;
+
 
 @end
