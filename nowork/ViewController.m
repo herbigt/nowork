@@ -13,6 +13,14 @@
 @end
 
 @implementation ViewController
+@synthesize stepperPressed;
+@synthesize stepperValueLabel;
+
+- (IBAction)stepperValueChanged:(id)sender
+{
+    double stepperValue = stepperPressed.value;
+    self.stepperValueLabel.text = [NSString stringWithFormat:@"%.f", stepperValue];
+}
 
 - (void)viewDidLoad
 {
