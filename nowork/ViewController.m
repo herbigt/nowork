@@ -25,6 +25,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.stepperValueLabel.text = [NSString stringWithFormat:@"%.f", stepperPressed.value];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
